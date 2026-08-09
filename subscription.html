@@ -6,21 +6,15 @@
     <meta name="theme-color" content="#141410" />
     <meta name="robots" content="noindex, nofollow, noarchive" />
     <title>Entropi · ekstern shadow-pilot</title>
-    <!-- Separat pilot-entry. Ingen manifest- eller service-worker-registrering. -->
+    <link rel="canonical" href="https://adaptiv.entropicoaching.dk/" />
+    <!-- Offentlig pilot-entry: ingen lokal fallback, manifest eller service worker. -->
     <style>
       html, body { margin: 0; background: #141410; }
       body { -webkit-font-smoothing: antialiased; }
     </style>
-    <script type="module" crossorigin src="./assets/subscription-fsb8mvan.js"></script>
+    <script type="module" crossorigin src="./assets/public-pilot-entry-HnnhpFxw.js"></script>
   </head>
   <body>
     <div id="subscription-root"></div>
-    <script>
-      // The source entry needs Vite. Keep a direct local review from becoming a
-      // blank page by opening the already-built, local pilot copy instead.
-      if (location.protocol === 'file:' && !location.pathname.replace(/\\\\/g, '/').includes('/dist-subscription-pilot/')) {
-        location.replace('./dist-subscription-pilot/subscription.html')
-      }
-    </script>
   </body>
 </html>
